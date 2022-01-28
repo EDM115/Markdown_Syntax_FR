@@ -6,50 +6,59 @@ Markdown Cheatsheet<a name="TOP"></a>
 ===================
 
 - - - - 
-# Heading 1 #
+# Titre 1 #
 
-    Markup :  # Heading 1 #
+    # Titre 1 #
 
-    -OR-
+    -ou-
 
-    Markup :  ============= (below H1 text)
+    ============= (en dessous du Titre 1)
 
-## Heading 2 ##
+## Titre 2 ##
 
-    Markup :  ## Heading 2 ##
+    ## Titre 2 ##
 
-    -OR-
+    -ou-
 
-    Markup: --------------- (below H2 text)
+    --------------- (en dessous du Titre 2)
 
-### Heading 3 ###
+### Titre 3 ###
 
-    Markup :  ### Heading 3 ###
+    ### Titre 3 ###
 
-#### Heading 4 ####
+#### Titre 4 ####
 
-    Markup :  #### Heading 4 ####
+    #### Titre 4 ####
+
+#### Titre 5 ####
+
+    ###### Titre 5 ######
 
 
-Common text
+###### Titre 6 ######
 
-    Markup :  Common text
+    ###### Titre 6 ######
 
-_Emphasized text_
 
-    Markup :  _Emphasized text_ or *Emphasized text*
+Texte
 
-~~Strikethrough text~~
+    Juste écrit
 
-    Markup :  ~~Strikethrough text~~
+_Italique_
 
-__Strong text__
+    _Ita_ *lique*
 
-    Markup :  __Strong text__ or **Strong text**
+~~Barré~~ (problèmes d'affichage sur certains navigateurs ou OS pas à jour)
 
-___Strong emphasized text___
+    ~~Barré~~
 
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
+__Gras__
+
+    __Gras__ **pas gros**
+
+___Gras + italique___
+
+    ___pour les forceurs___ ***ou si c'est très important***
 
 [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
@@ -734,3 +743,9 @@ $\forall x \in X, \quad \exists y \leq \epsilon$
 </div>
 </div>    </div>
   </div>
+
+---
+
+#### Sources :
+- [x] [adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
+- [x] [tchapi](https://github.com/tchapi/markdown-cheatsheet)
