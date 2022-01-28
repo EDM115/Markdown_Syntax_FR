@@ -1,16 +1,13 @@
 # Markdown_Syntax_FR
 Juste de l'aide pour écrire en markdown sur github 😃
 
+### Markdown Cheatsheet<a name="TOP"></a>
 
-Markdown Cheatsheet<a name="TOP"></a>
-===================
-
-- - - - 
 # Titre 1 #
 
     # Titre 1 #
 
-    -ou-
+    ou
 
     ============= (en dessous du Titre 1)
 
@@ -18,7 +15,7 @@ Markdown Cheatsheet<a name="TOP"></a>
 
     ## Titre 2 ##
 
-    -ou-
+    ou
 
     --------------- (en dessous du Titre 2)
 
@@ -39,8 +36,7 @@ Markdown Cheatsheet<a name="TOP"></a>
 
     ###### Titre 6 ######
 
-
-Texte
+Texte<a name="texte"></a>
 
     Juste écrit
 
@@ -60,13 +56,13 @@ ___Gras + italique___
 
     ___pour les forceurs___ ***ou si c'est très important***
 
-[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+[Texte avec un lien](https://github.com/EDM115/ "eheh c'est moi 😎") et liens sans texte : https://lien.fr/ ou <https://autrelien.com/>
 
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+    [Le texte](https://unlienrandom.fr/ "Le texte de l'info-bulle") https://lien.fr/ ou <https://autrelien.com/>
 
-[heading-1](#heading-1 "Goto heading-1")
+[Aller dans une autre catégorie](#texte "Bah vas-y 🤓")
     
-    Markup: [heading-1](#heading-1 "Goto heading-1")
+    [nom du lien](#nom de l'ancre "info-bulle") ET <a name="nom de l'ancre"></a> à coté (ou devant) ton texte
 
 Table, like this one :
 
