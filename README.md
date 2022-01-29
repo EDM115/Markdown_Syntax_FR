@@ -139,12 +139,7 @@ Gauche | Centre | Droite
         * Encore à côté, …
 * Autre liste non ordonnée
 
-OU
-
-* Liste non ordonnée
-    * Un point à côté
-        * Encore à côté, …
-* Autre liste non ordonnée
+Caractères utilisables : * - +
 ~~~
 
 1. Liste numérotée
