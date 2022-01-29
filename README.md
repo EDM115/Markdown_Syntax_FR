@@ -64,51 +64,49 @@ ___Gras + italique___
     
     [nom du lien](#nom de l'ancre "info-bulle") ET <a name="nom de l'ancre"></a> à coté (ou devant) ton texte
 
-Table, like this one :
+Un tableau, comme ici :
 
-First Header  | Second Header
+Colonne 1 | Colonne 2
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+Text | Texte
+Texte  | Texte
 
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+Colonne 1  | Colonne 2
+---------- | ---------
+Texte      | Texte
+Texte      | Texte
+(note : les | n'ont pas besoin d'être alignées)
 ```
 
-Adding a pipe `|` in a cell :
+Ajouter `|` Dans un tableau :
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | \|
-
-```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
-```
-
-Left, right and center aligned table
-
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
+Colonne 1  | Colonne 2
+---------- | ---------
+Texte      | Texte
+Texte      | \|
 
 ```
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
+Ajoute un antislash avant : \| 
+```
+
+Tableau aligné à gauche, centre, droite
+
+Gauche | Centre | Droite
+| :--- | :---: | ---:
+◀️  | ⏺️ | ▶️
+⬅️  | 🔛 | ➡️
+
+```
+Gauche | Centre | Droite
+| :--- | :---: | ---:
+◀️  | ⏺️ | ▶️
+⬅️  | 🔛 | ➡️
 ```
 
 `code()`
 
-    Markup :  `code()`
+    `code()`
 
 ```javascript
     var specificLanguage_code = 
@@ -127,133 +125,144 @@ Content Cell  | Content Cell | Content Cell
     }
 ```
 
-    Markup : ```javascript
-             ```
+    ```javascript
+    ```
 
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
-
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
-
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
+* Liste non ordonnée
+    * Un point à côté
+        * Encore à côté, …
+* Autre liste non ordonnée
 
 ~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
+* Liste non ordonnée
+    * Un point à côté
+        * Encore à côté, …
+* Autre liste non ordonnée
+
+OU
+
+* Liste non ordonnée
+    * Un point à côté
+        * Encore à côté, …
+* Autre liste non ordonnée
 ~~~
 
-- [ ] An uncompleted task
-- [x] A completed task
+1. Liste numérotée
+    1. Indentée
+    2. La suite de l'indentation
+2. Suite des numéros
 
 ~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
+1. Liste numérotée
+    1. Indentée
+    2. La suite de l'indentation
+2. Suite des numéros
 ~~~
 
-- [ ] An uncompleted task
-    - [ ] A subtask
+- [ ] Tâche non complétée
+    - [ ] Une sous-tâche
+- [x] Tâche finie
 
 ~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
+- [ ] Tâche non complétée
+    - [ ] Une sous-tâche
+- [x] Tâche finie
 ~~~
 
-> Blockquote
->> Nested blockquote
+> Citation
+>> Sous-citation
 
-    Markup :  > Blockquote
-              >> Nested Blockquote
+    > Citation
+    >> Sous-citation
 
-_Horizontal line :_
+_Ligne horizontale :_
 - - - -
 
-    Markup :  - - - -
+    - - - -
+    
+    OU
+    
+    ---
 
-_Image with alt :_
+_Image avec texte alternatif :_
 
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
 
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+    ![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
 
-Foldable text:
+Texte (ou n'importe quoi) dépliable :
 
 <details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+  <summary>Titre 1</summary>
+    <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
 </details>
 <details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+  <summary>Spoiler Alert</summary>
+    <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
 </details>
 
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
+    <details>
+      <summary>Titre 1</summary>
+        <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
+    </details>
+    <details>
+      <summary>Spoiler Alert</summary>
+        <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
+    </details>
+
+Affichage de balises HTML (coloration syntaxique) :
 
 ```html
 <h3>HTML</h3>
-<p> Some HTML code here </p>
+<p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
 ```
 
-Link to a specific part of the page:
+    ```html
+    <h3>HTML</h3>
+    <p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
+    ```
 
-[Go To TOP](#TOP)
+
+Lien vers une partie spécifique du README.md :
+
+[Va en haut](#TOP)
    
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
+    [Nom de l'ancre](#id)
+    ET
+    À côté de la destination de ton ancre : <a name="id"></a>    
 
-Hotkey:
+Touche du clavier :
 
 <kbd>⌘F</kbd>
 
 <kbd>⇧⌘F</kbd>
 
-    Markup : <kbd>⌘F</kbd>
+    <kbd>⌘F</kbd>
 
-Hotkey list:
+*Liste des touches compatibles :*
 
-| Key | Symbol |
+| Touche | Symbole |
 | --- | --- |
 | Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
+| Contrôle | ⌃ |
+| Command (ou win) | ⌘ |
+| Maj | ⇧ |
+| Verr. Maj | ⇪ |
 | Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
+| Echap | ⎋ |
+| Marche-arrêt | ⌽ |
+| Entrée | ↩ |
+| Suppr | ⌫ |
+| Haut | ↑ |
+| Bas | ↓ |
+| Gauche | ← |
+| Droite | → |
 
-Emoji:
+Emoji :
 
-:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+:exclamation: Utilise les emojis pour rendre un texte plus compréhensible :+1:  La liste est la même que pour Discord et Telegram [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
-    Markup : Code appears between colons :EMOJICODE:
+    EXACTEMENT pareil que Discord et Telegram, c'est entre : :EMOJICODE:
 
 
 
