@@ -5,33 +5,24 @@ Juste de l'aide pour écrire en markdown sur github 😃
 
 ## Sommaire :
 
-- Les titres
-- La mise en forme du texte (comme dans Word)
-- Les liens
-- Les listes
-- Les tableaux
-- Les images
-- Le code (`ça`)
-- Comment sauter une ligne
-- Les séparateurs
-- Vidéos YouTube
-- Crédits
-
-<a href="#headers">Headers</a><br>
-<a href="#emphasis">Emphasis</a><br>
-<a href="#lists">Lists</a><br>
-<a href="#links">Links</a><br>
-<a href="#images">Images</a><br>
-<a href="#code">Code and Syntax Highlighting</a><br>
-<a href="#tables">Tables</a><br>
-<a href="#blockquotes">Blockquotes</a><br>
-<a href="#html">Inline HTML</a><br>
-<a href="#hr">Horizontal Rule</a><br>
-<a href="#lines">Line Breaks</a><br>
-<a href="#videos">YouTube Videos</a><br>
-<a href="#tex">TeX Mathematical Formulae</a></p>
+- <a href="#titres">Les titres</a>  
+- <a href="#word">La mise en forme du texte (comme dans Word)</a>  
+- <a href="#liens">Les liens</a>  
+- <a href="#tableaux">Les tableaux</a>  
+- <a href="#code">Le code (`ça`)</a>  
+- <a href="#listes">Les listes</a>  
+- <a href="#separation">Les séparateurs</a>  
+- <a href="#images">Les images</a>  
+- <a href="#saut">Comment sauter une ligne</a>  
+- <a href="clavier">Les touches du clavier</a>  
+- <a href="#emoji">Les emojis</a>  
+- <a href="#yt">Vidéos YouTube</a>  
+- <a href="#credits">Crédits</a>  
 
 ---
+
+<a name="titres"><h3>Les titres :</h3></a>
+
 
 # Titre 1 #
 
@@ -41,6 +32,7 @@ Juste de l'aide pour écrire en markdown sur github 😃
 
     ============= (en dessous du Titre 1)
 
+
 ## Titre 2 ##
 
     ## Titre 2 ##
@@ -49,13 +41,16 @@ Juste de l'aide pour écrire en markdown sur github 😃
 
     --------------- (en dessous du Titre 2)
 
+
 ### Titre 3 ###
 
     ### Titre 3 ###
 
+
 #### Titre 4 ####
 
     #### Titre 4 ####
+
 
 ##### Titre 5 #####
 
@@ -66,44 +61,106 @@ Juste de l'aide pour écrire en markdown sur github 😃
 
     ###### Titre 6 ######
 
-Texte<a name="texte"></a>
+---
 
-    Juste écrit
+<a name="word"><h3>La mise en forme du texte (comme dans Word) :</h3></a>
+
+Texte
+
+    Juste tu écrit
+
 
 _Italique_
 
     _Ita_ *lique*
 
+
 ~~Barré~~ (problèmes d'affichage sur certains navigateurs ou OS pas à jour)
 
     ~~Barré~~
+
 
 __Gras__
 
     __Gras__ **pas gros**
 
+
 ___Gras + italique___
 
     ___pour les forceurs___ ***ou si c'est très important***
+
+
+<u>Souligné</u>
+
+    <u>On est obligés d'utiliser une balise HTML</u>
+
+
+- [ ] Tâche non complétée
+    - [ ] Une sous-tâche
+- [x] Tâche finie
+
+~~~
+- [ ] Tâche non complétée
+    - [ ] Une sous-tâche
+- [x] Tâche finie
+~~~
+
+
+Blocs de citation :
+
+> Citation
+>> Sous-citation
+>>> Sous-sous-...
+
+    > Citation
+    >> Sous-citation
+    >>> Utile pour recréer des réponses
+
+Texte (ou n'importe quoi) dépliable :
+
+<details>
+  <summary>Titre 1</summary>
+    <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
+</details>
+<details>
+  <summary>Spoiler Alert</summary>
+    <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
+</details>
+
+    <details>
+      <summary>Titre 1</summary>
+        <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
+    </details>
+    <details>
+      <summary>Spoiler Alert</summary>
+        <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
+    </details>
+
+---
+
+<a name="liens"><h3>Les liens :</h3></a>
 
 [Texte avec un lien](https://github.com/EDM115/ "eheh c'est moi 😎") et liens sans texte : https://lien.fr/ ou <https://autrelien.com/> (marche aussi avec les <adresses@mail.com>)
 
     [Le texte](https://unlienrandom.fr/ "Le texte de l'info-bulle") https://lien.fr/ ou <https://autrelien.com/> (marche aussi avec les <adresses@mail.com>)
 
+
 [Aller dans une autre catégorie](#texte "Bah vas-y 🤓")
     
     [nom du lien](#nom de l'ancre "info-bulle") ET <a name="nom de l'ancre"></a> à coté (ou devant) ton texte
 
-[Les liens d'auto-référence][Juste du texte, peu importe SI LES MAJUSCULES sont présentes ou NON]
 
-    [Les liens d'auto-référence][Juste du texte, peu importe SI LES MAJUSCULES sont présentes ou NON]
+Lien vers une partie spécifique du README.md :
 
-[Pour ces liens-là, on peut aussi utiliser des chiffres (utile par exemple pour des références comme sur Wikipédia)][1]
+[Va en haut](#top)
+   
+    [Nom de l'ancre](#id)
+    ET
+    À côté de la destination de ton ancre : <a name="id"></a>
 
-    [Pour ces liens-là, on peut aussi utiliser des chiffres (utile par exemple pour des références comme sur Wikipédia)][1]
+---
 
-Et AILLEURS dans le `.md`, tu mets tes références (là, elles seront en bas du doc)
-
+<a name="tableaux"><h3>Les tableaux :</h3></a>
 
 Un tableau, comme ici :
 
@@ -145,6 +202,10 @@ Gauche | Centre | Droite
 ⬅️  | 🔛 | ➡️
 ```
 
+---
+
+<a name="code"><h3>Le code (`ça`) :</h3></a>
+
 `code()`
 
     `code()`
@@ -159,6 +220,12 @@ Gauche | Centre | Droite
     ↵
     ↹code()
     ↵
+    
+    OU
+    
+    ~~~
+    code
+    ~~~
 
 
 ```javascript
@@ -181,6 +248,7 @@ Gauche | Centre | Droite
     ```javascript
     ```
 
+
 ```python
     while True:
         print("I love coffee")
@@ -188,6 +256,21 @@ Gauche | Centre | Droite
 
     ```python
     ```
+
+
+```html
+<h3>HTML</h3>
+<p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
+```
+
+    ```html
+    <h3>HTML</h3>
+    <p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
+    ```
+
+---
+
+<a name="listes"><h3>Les listes :</h3></a>
 
 * Liste non ordonnée
     * Un point à côté
@@ -219,28 +302,12 @@ Caractères utilisables : * - +
 2. Suite des numéros
 ~~~
 
-- [ ] Tâche non complétée
-    - [ ] Une sous-tâche
-- [x] Tâche finie
+---
 
-~~~
-- [ ] Tâche non complétée
-    - [ ] Une sous-tâche
-- [x] Tâche finie
-~~~
-
-Blocs de citation :
-
-> Citation
->> Sous-citation
->>> Sous-sous-...
-
-    > Citation
-    >> Sous-citation
-    >>> Utile pour recréer des réponses
+<a name="separation"><h3>Les séparateurs :</h3></a>
 
 _Ligne horizontale :_
-- - - -
+---
 
     - - - -
     
@@ -248,66 +315,31 @@ _Ligne horizontale :_
     
     ---
 
+---
+
+<a name="images"><h3>Les images :</h3></a>
+
 _Image avec texte alternatif :_
 
-![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
+![Moi](https://github.com/EDM115/EDM115.github.io/raw/main/thumbnail.jpg "Le titre est optionnel")
 
-    ![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
+    ![Moi](https://github.com/EDM115/EDM115.github.io/raw/main/thumbnail.jpg "Le titre est optionnel")
 
-Comme avec les liens, on peut les mettre en auto-référence :
+---
 
-![Moi askip][logo]
+<a name="saut"><h3>Comment sauter une ligne :</h3></a>
 
-    ![Moi askip][logo]
-
-Texte (ou n'importe quoi) dépliable :
-
-<details>
-  <summary>Titre 1</summary>
-    <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
-</details>
-<details>
-  <summary>Spoiler Alert</summary>
-    <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
-</details>
-
-    <details>
-      <summary>Titre 1</summary>
-        <p>Ce genre de truc est utile pour faire des menus avec dedans des trucs pas très importants</p>
-    </details>
-    <details>
-      <summary>Spoiler Alert</summary>
-        <p>Ils meurent tous à la fin (ouais, y'a pas de truc "spoiler" comme sur Discord ou Telegram, ce truc peut donc être utile pour ça)</p>
-    </details>
-
-Affichage de balises HTML (coloration syntaxique) :
-
-```html
-<h3>HTML</h3>
-<p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
-```
-
-    ```html
-    <h3>HTML</h3>
-    <p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
-    ```
-
-Retour à la ligne :
 C'est pas aussi simple que vous le pensez...
 Là par exemple, j'ai fait un ↩ mais... Ça n'apparaît pas !  
 La solution, y'en a plusieurs en fait :  
 
     Utiliser un tag <br>
     Utiliser DEUX espaces à la fin d'une ligne ⎵ ⎵
-    Sauter DEUX lignes ↩ ↩
+    Sauter DEUX lignes ↩ ↩ 
 
-Lien vers une partie spécifique du README.md :
+---
 
-[Va en haut](#top)
-   
-    [Nom de l'ancre](#id)
-    ET
-    À côté de la destination de ton ancre : <a name="id"></a>    
+<a name="clavier"><h3>Les touches du clavier :</h3></a>
 
 Touche du clavier :
 
@@ -336,11 +368,19 @@ Touche du clavier :
 | Gauche | ← |
 | Droite | → |
 
+---
+
+<a name="emoji"><h3>Les emojis :</h3></a>
+
 Emoji :
 
 :exclamation: Utilise les emojis pour rendre un texte plus compréhensible :+1:  La liste est la même que pour Discord et Telegram [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
     EXACTEMENT pareil que Discord et Telegram, c'est entre : :EMOJICODE:
+
+---
+
+<a name="yt"><h3>Vidéos YouTube :</h3></a>
 
 Vidéos YouTube :  
 Y'a pas de support direct, **en revanche** tu peux mettre une image avec un lien vers la vidéo :  
@@ -353,13 +393,9 @@ Si tu veux une taille spécifique, tu passe en html :
 
     <a href  ="https://www.youtube.com/watch?feature=player_embedded&v=LDJ-LsCDpLM" target="_blank"><img src="http://img.youtube.com/vi/LDJ-LsCDpLM/0.jpg" alt="Revealed Music 24/7 Live Stream Radio Best EDM - Big Room, Progressive House, Electro House, Dance" width="240" height="180" border="10"/></a>
 
-<h6>Références :</h6>
-[juste du texte, peu importe si les majuscules sont présentes ou non]:https://google.com
-[1]:http://t.me/EDM115
-[logo]:https://github.com/EDM115/EDM115.github.io/raw/main/thumbnail.jpg
-
 ---
 
+<a name="credits"></a>
 #### Sources :
-- [x] [adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 - [x] [tchapi](https://github.com/tchapi/markdown-cheatsheet)
+- [x] [adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
