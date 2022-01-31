@@ -1,7 +1,38 @@
 # Markdown_Syntax_FR
 Juste de l'aide pour écrire en markdown sur github 😃
 
-## Markdown Cheatsheet<a name="TOP"></a>
+## Markdown Cheatsheet<a name="top"></a>
+
+## Sommaire :
+
+- Les titres
+- La mise en forme du texte (comme dans Word)
+- Les liens
+- Les listes
+- Les tableaux
+- Les images
+- Le code (`ça`)
+- Comment sauter une ligne
+- Les séparateurs
+- Notations mathématiques
+- Vidéos YouTube
+- Crédits
+
+<a href="#headers">Headers</a><br>
+<a href="#emphasis">Emphasis</a><br>
+<a href="#lists">Lists</a><br>
+<a href="#links">Links</a><br>
+<a href="#images">Images</a><br>
+<a href="#code">Code and Syntax Highlighting</a><br>
+<a href="#tables">Tables</a><br>
+<a href="#blockquotes">Blockquotes</a><br>
+<a href="#html">Inline HTML</a><br>
+<a href="#hr">Horizontal Rule</a><br>
+<a href="#lines">Line Breaks</a><br>
+<a href="#videos">YouTube Videos</a><br>
+<a href="#tex">TeX Mathematical Formulae</a></p>
+
+---
 
 # Titre 1 #
 
@@ -63,6 +94,17 @@ ___Gras + italique___
 [Aller dans une autre catégorie](#texte "Bah vas-y 🤓")
     
     [nom du lien](#nom de l'ancre "info-bulle") ET <a name="nom de l'ancre"></a> à coté (ou devant) ton texte
+
+[Les liens d'auto-référence][Juste du texte, peu importe SI LES MAJUSCULES sont présentes ou NON]
+
+    [Les liens d'auto-référence][Juste du texte, peu importe SI LES MAJUSCULES sont présentes ou NON]
+
+[Pour ces liens-là, on peut aussi utiliser des chiffres (utile par exemple pour des références comme sur Wikipédia)][1]
+
+    [Pour ces liens-là, on peut aussi utiliser des chiffres (utile par exemple pour des références comme sur Wikipédia)][1]
+
+Et AILLEURS dans le `.md`, tu mets tes références (là, elles seront en bas du doc)
+
 
 Un tableau, comme ici :
 
@@ -145,12 +187,16 @@ Caractères utilisables : * - +
 1. Liste numérotée
     1. Indentée
     2. La suite de l'indentation
+    4. Les chiffres utilisés n'importent pas
+    8. Du moment que c'est des chiffres
 2. Suite des numéros
 
 ~~~
 1. Liste numérotée
     1. Indentée
     2. La suite de l'indentation
+    4. Les chiffres utilisés n'importent pas
+    8. Du moment que c'est des chiffres
 2. Suite des numéros
 ~~~
 
@@ -184,6 +230,12 @@ _Image avec texte alternatif :_
 ![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
 
     ![monimage](http://via.placeholder.com/200x150 "Le titre est optionnel")
+
+Comme avec les liens, on peut les mettre en auto-référence :
+
+![Moi askip][logo]
+
+    ![Moi askip][logo]
 
 Texte (ou n'importe quoi) dépliable :
 
@@ -220,7 +272,7 @@ Affichage de balises HTML (coloration syntaxique) :
 
 Lien vers une partie spécifique du README.md :
 
-[Va en haut](#TOP)
+[Va en haut](#top)
    
     [Nom de l'ancre](#id)
     ET
@@ -259,154 +311,19 @@ Emoji :
 
     EXACTEMENT pareil que Discord et Telegram, c'est entre : :EMOJICODE:
 
+---
+
 Comme je l'ai dit précédemment, on peut écrire en HTML sur du Markdown. La preuve juste en dessous (regardez le code si vous êtes pas convaincus 😁)
 
-<h5><a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Table of Contents</h5>
-<p><a href="#headers">Headers</a><br>
-<a href="#emphasis">Emphasis</a><br>
-<a href="#lists">Lists</a><br>
-<a href="#links">Links</a><br>
-<a href="#images">Images</a><br>
-<a href="#code">Code and Syntax Highlighting</a><br>
-<a href="#tables">Tables</a><br>
-<a href="#blockquotes">Blockquotes</a><br>
-<a href="#html">Inline HTML</a><br>
-<a href="#hr">Horizontal Rule</a><br>
-<a href="#lines">Line Breaks</a><br>
-<a href="#videos">YouTube Videos</a><br>
-<a href="#tex">TeX Mathematical Formulae</a></p>
-<a name="user-content-headers"></a>
-<h2><a id="user-content-headers" class="anchor" href="#headers" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Headers</h2>
-1. First ordered list item
-2. Another item
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.  
-   
-   Some text that should be aligned with the above item.
+<h2><a href="#links"></a>Links</h2>
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses"><pre lang="no-highlight"><code>1. First ordered list item
-2. Another item
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.  
-   
-   Some text that should be aligned with the above item.
+<h2><a href="#images"></a>Images</h2>
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-</code></pre></div>
-<ol>
-<li>First ordered list item</li>
-<li>Another item</li>
-</ol>
-<ul>
-<li>Unordered sub-list.</li>
-</ul>
-<ol>
-<li>
-<p>Actual numbers don't matter, just that it's a number</p>
-</li>
-<li>
-<p>Ordered sub-list</p>
-</li>
-<li>
-<p>And another item.</p>
-<p>Some text that should be aligned with the above item.</p>
-</li>
-</ol>
-<ul>
-<li>Unordered list can use asterisks</li>
-</ul>
-<ul>
-<li>Or minuses</li>
-</ul>
-<ul>
-<li>Or pluses</li>
-</ul>
-<a name="user-content-links"></a>
 <h2>
-<a id="user-content-links" class="anchor" href="#links" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Links</h2>
-<p>There are two ways to create links.</p>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="[I'm an inline-style link](https://www.google.com)
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or &lt;http://www.example.com&gt; and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com"><pre lang="no-highlight"><code>[I'm an inline-style link](https://www.google.com)
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or &lt;http://www.example.com&gt; and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-</code></pre></div>
-<p><a href="https://www.google.com" rel="nofollow">I'm an inline-style link</a></p>
-<p><a href="https://www.mozilla.org" rel="nofollow">I'm a reference-style link</a></p>
-<p><a href="http://slashdot.org" rel="nofollow">You can use numbers for reference-style link definitions</a></p>
-<p>Or leave it empty and use the <a href="http://www.reddit.com" rel="nofollow">link text itself</a></p>
-<p>URLs and URLs in angle brackets will automatically get turned into links.
-<a href="http://www.example.com" rel="nofollow">http://www.example.com</a> or <a href="http://www.example.com" rel="nofollow">http://www.example.com</a> and sometimes
-example.com (but not on Github, for example).</p>
-<p>Some text to show that the reference links can follow later.</p>
-<a name="user-content-images"></a>
-<h2>
-<a id="user-content-images" class="anchor" href="#images" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Images</h2>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;"><pre lang="no-highlight"><code>Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-</code></pre></div>
-<p>Here's our logo (hover to see the title text):</p>
-<p>Inline-style:
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
-<p>Reference-style:
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
-<a name="user-content-code"></a>
-<h2>
-<a id="user-content-code-and-syntax-highlighting" class="anchor" href="#code-and-syntax-highlighting" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Code and Syntax Highlighting</h2>
+<a href="#code-and-syntax-highlighting"></a>Code and Syntax Highlighting</h2>
 <p>Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and <em>Markdown Here</em> -- support syntax highlighting. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html" rel="nofollow">highlight.js demo page</a>.</p>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="Inline `code` has `back-ticks around` it."><pre lang="no-highlight"><code>Inline `code` has `back-ticks around` it.
-</code></pre></div>
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="Inline `code` has `back-ticks around` it."><pre lang="no-highlight">Inline `code` has `back-ticks around` it.
+</pre></div>
 <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
 <p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="```javascript
@@ -643,13 +560,14 @@ This line is only separated by a single newline, so it's a separate line in the 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;'><pre lang="no-highlight"><code>&lt;a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE
 " target="_blank"&gt;&lt;img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;
-</code></pre></div>
+</pre></div>
 <p>Or, in pure Markdown, but losing the image sizing and border:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)"><pre lang="no-highlight"><code>[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-</code></pre></div>
+</code>
+
 <a name="user-content-tex"></a>
 <h2>
-<a id="user-content-tex-mathematical-formulae" class="anchor" href="#tex-mathematical-formulae" aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TeX Mathematical Formulae</h2>
+<a href="#tex-mathematical-formulae"></a>TeX Mathematical Formulae</h2>
 <p>A full description of TeX math symbols is beyond the scope of this cheatsheet. Here's a <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" rel="nofollow">good reference</a>, and you can try stuff out on <a href="https://www.codecogs.com/latex/eqneditor.php" rel="nofollow">CodeCogs</a>. You can also play with formulae in the Markdown Here options page.</p>
 <p>Here are some examples to try out:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="$-b \pm \sqrt{b^2 - 4ac} \over 2a$
@@ -660,14 +578,13 @@ $\forall x \in X, \quad \exists y \leq \epsilon$
 </code></pre></div>
 <p>The beginning and ending dollar signs (<code>$</code>) are the delimiters for the TeX markup.</p>
 
-              </div>
-
-          </div>
-</div>
-</div>    </div>
-  </div>
+<h6>Références :</h6>
+[juste du texte, peu importe si les majuscules sont présentes ou non]: https://google.com
+[1]:http://t.me/EDM115
+[logo]: https://github.com/EDM115/EDM115.github.io/raw/main/thumbnail.jpg
 
 ---
+
 
 #### Sources :
 - [x] [adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
