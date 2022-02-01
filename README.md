@@ -67,7 +67,7 @@ Juste de l'aide pour écrire en markdown sur github 😃
 
 Texte
 
-    Juste tu écrit
+    Juste tu écris
 
 
 _Italique_
