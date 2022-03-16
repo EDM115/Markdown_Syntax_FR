@@ -10,6 +10,7 @@ Juste de l'aide pour écrire en markdown sur github 😃
 - <a href="#liens">Les liens</a>  
 - <a href="#tableaux">Les tableaux</a>  
 - <a href="#code">Le code (`ça`)</a>  
+- <a href="#diagramme">Les diagrammes</a>  
 - <a href="#listes">Les listes</a>  
 - <a href="#separation">Les séparateurs</a>  
 - <a href="#images">Les images</a>  
@@ -266,6 +267,30 @@ Gauche | Centre | Droite
     ```html
     <h3>HTML</h3>
     <p>Un peu de HTML ici (oui, les balises HTML sont compatibles sur GitHub 😃)</p>
+    ```
+
+---
+
+<a name="diagrammme"><h3>Les diagrammes :</h3></a>
+
+```mermaid
+flowchart LR
+    A[La base] --> B{Une question};
+    B -- Oui --> C[Nickel];
+    B -- Non --> D[Oups];
+    C ----> E[C'est un exemple inutile];
+    D ----> E[C'est un exemple inutile];
+```
+Ça utilise [mermaid](https://github.com/mermaid-js/mermaid#readme) et c'est assez compliqué à expliquer 😭  
+Le mieux, c'est que vous alliez voir [la doc](https://mermaid-js.github.io/mermaid/#/) et pourquoi pas expérimenter sur la [demo](https://mermaid.live/edit)  
+
+    ```mermaid
+    flowchart LR
+        A[La base] --> B{Une question};
+        B -- Oui --> C[Nickel];
+        B -- Non --> D[Oups];
+        C ----> E[C'est un exemple inutile];
+        D ----> E[C'est un exemple inutile];
     ```
 
 ---
