@@ -11,6 +11,7 @@ Juste de l'aide pour écrire en markdown sur github 😃
 - <a href="#tableaux">Les tableaux</a>  
 - <a href="#code">Le code (`ça`)</a>  
 - <a href="#diagramme">Les diagrammes</a>  
+- <a href="#math">Les expressions mathématiques</a>  
 - <a href="#listes">Les listes</a>  
 - <a href="#separation">Les séparateurs</a>  
 - <a href="#images">Les images</a>  
@@ -292,6 +293,30 @@ Le mieux, c'est que vous alliez voir [la doc](https://mermaid-js.github.io/merma
         C ----> E[C'est un exemple inutile];
         D ----> E[C'est un exemple inutile];
     ```
+
+---
+
+<a name="math"><h3>Les expressions mathématiques :</h3></a>
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$  
+Il s'agit des expressions LaTeX, GitHub a intégré [MathJax](http://docs.mathjax.org/en/latest/input/tex/index.html#tex-and-latex-support) direcement dans GitHub Flavored Markdown  
+  
+Pour utiliser une expression dans une ligne, on l'entoure avec `$` :  
+Un exemple $\sqrt{3x-1}+(1+x)^2$ dans une ligne
+
+    Un exemple $\sqrt{3x-1}+(1+x)^2$ dans une ligne
+
+Pour le mettre dans un bloc distinct, soit on l'entoure avec `$$`, soit un crée un code block avec le mot-clé math :
+
+    $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$  
+    
+OU
+    
+    ```math
+    \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+    ```
+
+Plus d'info pour ce que vous pouvez utiliser [ici](http://docs.mathjax.org/en/latest/input/tex/extensions/index.html)/[ou ici](http://docs.mathjax.org/en/latest/input/tex/macros/index.html), et des infos générales [là](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 ---
 
