@@ -434,14 +434,14 @@ Emoji :
 
 Vidéos YouTube :  
 Y'a pas de support direct, **en revanche** tu peux mettre une image avec un lien vers la vidéo :  
-[![Revealed Music 24/7 Live Stream Radio Best EDM - Big Room, Progressive House, Electro House, Dance](http://img.youtube.com/vi/LDJ-LsCDpLM/0.jpg)](http://www.youtube.com/watch?v=LDJ-LsCDpLM)
+[![rickroll HD](http://img.youtube.com/vi/h2csePLbahQ/0.jpg)](https://www.youtube.com/watch?v=h2csePLbahQ)
 
     [![Texte pour l'info-bulle](http://img.youtube.com/vi/l'ID de la vidéo/0.jpg)](http://www.youtube.com/watch?v=l'ID de la vidéo)
 
 Si tu veux une taille spécifique, tu passe en html :  
-<a href  ="https://www.youtube.com/watch?feature=player_embedded&v=LDJ-LsCDpLM" target="_blank"><img src="http://img.youtube.com/vi/LDJ-LsCDpLM/0.jpg" alt="Revealed Music 24/7 Live Stream Radio Best EDM - Big Room, Progressive House, Electro House, Dance" width="240" height="180" border="10"/></a>
+<a href  ="https://www.youtube.com/watch?feature=player_embedded&v=h2csePLbahQ" target="_blank"><img src="http://img.youtube.com/vi/h2csePLbahQ/0.jpg" alt="rickroll HD" width="240" height="180" border="10"/></a>
 
-    <a href  ="https://www.youtube.com/watch?feature=player_embedded&v=LDJ-LsCDpLM" target="_blank"><img src="http://img.youtube.com/vi/LDJ-LsCDpLM/0.jpg" alt="Revealed Music 24/7 Live Stream Radio Best EDM - Big Room, Progressive House, Electro House, Dance" width="240" height="180" border="10"/></a>
+    <a href  ="https://www.youtube.com/watch?feature=player_embedded&v=h2csePLbahQ" target="_blank"><img src="http://img.youtube.com/vi/h2csePLbahQ/0.jpg" alt="rickroll HD" width="240" height="180" border="10"/></a>
 
 ---
 
