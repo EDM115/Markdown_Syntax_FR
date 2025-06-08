@@ -79,9 +79,9 @@ ___Gras + italique___
 
     ___pour les forceurs___ ***ou si c'est très important***
 
-<u>Souligné</u>
+<ins>Souligné</ins>
 
-    <u>On est obligés d'utiliser une balise HTML</u>
+    <ins>On est obligés d'utiliser une balise HTML</ins>
 
 Les <sup>exposants</sup> et les <sub>indices</sub> :
 
